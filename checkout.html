@@ -16,6 +16,9 @@
 </head>
 <body>
 
+<!-- TODO ajuster les tailles des divs -->
+
+
 <!-- NAVBAR BANNER -->
 <nav class="bg-white font-sans flex  flex-col text-center md:flex-row py-4 md:px-6 px-2 bg-white shadow  w-full md:h-16 ">
     <div class="mb-2 sm:mb-0 flex-1 md:text-left  ">
@@ -146,51 +149,57 @@
         <tbody>
         <tr>
             <td><img src="img/MASQUE_0-rouge.png" alt="masque" class="h-16 mx-auto object-contain"></td>
-            <td>Masque réspirant </td>
+            <td>Masque réspirant</td>
             <td>Rouge</td>
-            <td><select name="number">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3" selected>3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select></td>
+
+            <td><label class="hidden" for="1"></label>
+                <select id="1" name="number">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select></td>
         </tr>
         <tr class="bg-gray-100">
             <td><img src="img/MASQUE_0-vert.png" alt="masque" class="h-16 mx-auto object-contain"></td>
-            <td>Masque réspirant </td>
+            <td>Masque réspirant</td>
             <td>Vert</td>
-            <td><select name="number" class="bg-gray-100" >
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3" >3</option>
-                <option value="4" selected>4</option>
-                <option value="5">5</option>
-            </select></td>
+            <td><label class="hidden" for="2"></label>
+                <select id="2" name="number">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4" selected>4</option>
+                    <option value="5">5</option>
+                </select></td>
         </tr>
         <tr>
             <td><img src="img/MASQUE-DETOURE_0.png" alt="masque" class="h-16 mx-auto object-contain"></td>
-            <td>Masque réspirant </td>
+            <td>Masque réspirant</td>
             <td>Bleu</td>
-            <td><select name="number" >
-                <option value="1" >1</option>
-                <option value="2" selected>2</option>
-                <option value="3" >3</option>
-                <option value="4" >4</option>
-                <option value="5">5</option>
-            </select></td>
+            <td><label class="hidden" for="3"></label>
+                <select id="3" name="number">
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select></td>
         </tr>
         <tr class="bg-gray-100">
             <td><img src="img/MASQUE-DETOURE_1.png" alt="masque" class="h-16 mx-auto object-contain"></td>
-            <td>Masque un peu moins réspirant </td>
+            <td>Masque un peu moins réspirant</td>
             <td>Blanc</td>
-            <td><select name="number" class="bg-gray-100" >
-                <option value="1" >1</option>
-                <option value="2" selected>2</option>
-                <option value="3" >3</option>
-                <option value="4" >4</option>
-                <option value="5">5</option>
-            </select></td>
+            <td>
+                <label class="hidden" for="4"></label>
+                <select class="bg-gray-100" id="4" name="number">
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select></td>
         </tr>
         </tbody>
     </table>

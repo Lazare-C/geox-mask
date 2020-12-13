@@ -1,3 +1,9 @@
+/*
+ * LazareC
+ * EDUCATION PROJECT
+ * FILE: tailwind.css
+ */
+
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
 /*
@@ -31171,7 +31177,7 @@ video {
 CUSTOM CSS
 ----- */
 
-.review_woman:hover .women_mask {
+.review_img:hover .review_mask {
   /*visibility: hidden;*/
   -webkit-animation: drop 1.2s forwards;
           animation: drop 1.2s forwards;

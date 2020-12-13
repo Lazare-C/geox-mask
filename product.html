@@ -1,0 +1,242 @@
+<!--
+  ~ LazareC
+  ~ EDUCATION PROJECT
+  ~ FILE: product.html
+  -->
+
+<!--
+  ~ LazareC
+  ~ EDUCATION PROJECT
+  ~ FILE: product.html
+  -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+    <link href="styles/compiled.css" rel="stylesheet">
+    <link href="styles/tailwind.css" rel="stylesheet">
+    <title>Produit</title>
+</head>
+<body>
+
+<!-- NAVBAR BANNER -->
+<nav class="bg-white font-sans flex  flex-col text-center md:flex-row py-4 md:px-6 px-2 bg-white shadow  w-full md:h-16 ">
+    <div class="mb-2 sm:mb-0 flex-1 md:text-left  ">
+        <a class="text-2xl  no-underline mr-2 text-grey-darkest hover:text-blue-dark" href="index.html">Geox Mask</a>
+        <label for="id_nav_search" class="hidden"></label>
+        <input id="id_nav_search" class="text-lg text-grey-darkest md:hidden w-1/3  justify-self-end  justify-self-end   border-2 rounded text-center  bg-gray-200 focus:bg-gray-100 outline-none focus:outline-none focus:shadow-outline "
+               placeholder="recherche" value="">
+    </div>
+
+    <div class="flex justify-center flex-1">
+        <form action="search.html" method="get">
+            <label for="search_hero" class="hidden"></label>
+            <input id="search_hero" class="w-full text-lg text-grey-darkest hidden   md:block  ml-2 border-2 rounded text-center  bg-gray-200 focus:bg-gray-100 outline-none focus:outline-none focus:shadow-outline " name="search_product"
+                   placeholder="recherche"
+                   type="text" value="">
+        </form>
+
+    </div>
+    <div class=" flex md:justify-end justify-center flex-1">
+
+        <!-- ICON DU SITE: https://heroicons.com/ -->
+        <a class="md:mr-8 mr-8 text-lg no-underline text-grey-darkest hover:text-blue-dark flex" href="checkout.html">Panier
+
+
+            <svg class="h-full w-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="1"/>
+            </svg>
+        </a>
+
+
+        <a class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2 flex" href="about.html">A propos
+
+            <svg class="h-full w-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="1"/>
+            </svg>
+        </a>
+
+    </div>
+</nav>
+
+
+<!-- PRODUCT BANNER -->
+<div class="bg-white flex md:h-3/6 shadow-2xl  md:h-full  md:mx-24 mx-2 my-4 md:my-16 content-center flex-nowrap  ">
+
+
+    <div class="flex-grow-0 self-center max-w-xl w-full hidden md:block flex flex-col ">
+        <div>
+            <img alt="UN TRES BEAU MASQUE" class="  object-contain" src="img/MASQUE-DETOURE_0.png">
+            <!--            <img class="  object-contain " alt="UN TRES BEAU MASQUE" src="img/MASQUE_0-rouge.png">-->
+            <!--            <img class="  object-contain " alt="UN TRES BEAU MASQUE" src="img/MASQUE_0-vert.png">-->
+        </div>
+        <div class="flex-row flex h-full   justify-between mb-24 mx-12">
+
+            <img alt="UN TRES BEAU MASQUE" class=" w-24 border-4 border-gray-300 object-contain  "
+                 src="img/MASQUE-DETOURE_0.png">
+            <img alt="UN TRES BEAU MASQUE" class=" w-24 border-4 object-contain "
+                 src="img/MASQUE_0-rouge.png">
+            <img alt="UN TRES BEAU MASQUE" class=" w-24 border-4 object-contain  " src="img/MASQUE_0-vert.png">
+        </div>
+    </div>
+
+
+    <div class="w-full h-full self-center  content-center  align-middle  md:ml-16 text-center md:text-left ">
+        <div class=" md:text-4xl text-2xl mt-8  font-semibold text-gray-900 whitespace-nowrap">Les masques qui
+            respirent
+        </div>
+
+
+        <div class="flex-grow-0 self-center max-w-xl w-full  md:hidden flex flex-col ">
+            <div>
+                <img alt="UN TRES BEAU MASQUE" class="  object-contain  " src="img/MASQUE-DETOURE_0.png">
+            </div>
+            <div class="flex-row flex h-full   justify-between  mx-4">
+
+                <img alt="UN TRES BEAU MASQUE" class=" w-24 border-4 border-gray-300 object-contain object-center "
+                     src="img/MASQUE-DETOURE_0.png">
+                <img alt="UN TRES BEAU MASQUE" class=" w-24 border-4 object-contain object-center "
+                     src="img/MASQUE-DETOURE_0.png">
+                <img alt="UN TRES BEAU MASQUE" class=" w-24 border-4 object-contain object-center "
+                     src="img/MASQUE-DETOURE_0.png">
+
+
+            </div>
+        </div>
+
+
+        <div class="md:mt-12 mt-6 mx-8 text-m font-light text-true-gray-500 text-left ">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Sed blandit nunc nec tempus vulputate. Sed quis urna at quam luctus maximus non
+            at nulla. Pellentesque fringilla iaculis libero sed placerat. Aliquam erat volutpat. Nulla porttitor quis
+            dui id aliquam. Pellentesque vestibulum, neque sit amet facilisis ultricies, lorem justo ultrices ex, vel
+            accumsan ligula turpis ut magna. Aliquam et dui enim. Maecenas vestibulum porta metus, sed efficitur quam
+            rhoncus eget.
+        </div>
+
+        <div class="mt-12 mb-8 w-full text-center">
+
+            <span class="text-red-500 font-bold text-4xl"> 17.50€</span> <span
+                class="text-2xl text-gray-800 line-through ">32€</span>
+
+            <br>
+            <button
+                    class="border border-indigo-500 bg-indigo-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-indigo-600 focus:outline-none focus:shadow-outline">
+                Ajouter au panier
+            </button>
+        </div>
+    </div>
+
+
+</div>
+
+
+<!-- COMMENT SECTION -->
+
+
+<div class="md:mx-24 mx-4   ">
+    <form action="#" method="get">
+        <div class="bg-white max-w-2xl my-8 mx-auto text-gray-600  shadow-xs flex-col flex justify-center  shadow-2xl text-center content-center   ">
+
+
+            <label class="w-auto mt-8 " for="user">Entrez votre nom: </label>
+            <input class="bg-gray-200 pl-4  mx-8 my-4 h-14 rounded text-sm focus:outline-none justify-center" id="user"
+                   name="user"
+                   placeholder="entrer votre nom">
+            <label class="" for="comment">Entrez votre commentaire: </label>
+            <textarea class="mx-8 pl-4 pt-4 resize-none mt-4 bg-gray-200 h-24 rounded text-sm focus:outline-none justify-center" id="comment"
+                      name="comment"
+                      placeholder="Entrer un commantaire"></textarea>
+
+
+            <button class="w-1/3 mx-auto my-8 text-2xl text-white px-2 h-11 font-semibold rounded uppercase bg-green-400 hover:bg-green-300"
+                    type="submit">
+                Envoyer
+            </button>
+
+
+        </div>
+    </form>
+    <!--INSPIRE D'UN MODEL SUR: tailwindcomponents.com-->
+    <div class="grid gap-6 mb-8 md:grid-cols-2">
+        <div class="min-w-0 p-4 bg-gray-100 rounded-lg shadow-xs">
+            <h4 class="mb-4 font-semibold text-gray-600 ">
+                Jean Marque du troue
+            </h4>
+            <p class="text-gray-600 dark:text-gray-400">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Fuga, cum commodi a omnis numquam quod? Totam exercitationem
+                quos hic ipsam at qui cum numquam, sed amet ratione! Ratione,
+                nihil dolorum.
+            </p>
+        </div>
+        <div class="min-w-0 p-4 text-white bg-purple-600 rounded-lg shadow-xs">
+            <h4 class="mb-4 font-semibold">
+                Michel Dautraix
+            </h4>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Fuga, cum commodi a omnis numquam quod? Totam exercitationem
+                quos hic ipsam at qui cum numquam, sed amet ratione! Ratione,
+                nihil dolorum.
+            </p>
+        </div>
+
+        <div class="min-w-0 p-4 text-white bg-purple-600 rounded-lg shadow-xs">
+            <h4 class="mb-4 font-semibold">
+                Michel Dautraix
+            </h4>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Fuga, cum commodi a omnis numquam quod? Totam exercitationem
+                quos hic ipsam at qui cum numquam, sed amet ratione! Ratione,
+                nihil dolorum.
+            </p>
+        </div>
+        <div class="min-w-0 p-4 bg-gray-100 rounded-lg shadow-xs">
+            <h4 class="mb-4 font-semibold text-gray-600 ">
+                Jean Marque
+            </h4>
+            <p class="text-gray-600 dark:text-gray-400">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Fuga, cum commodi a omnis numquam quod? Totam exercitationem
+                quos hic ipsam at qui cum numquam, sed amet ratione! Ratione,
+                nihil dolorum.
+            </p>
+        </div>
+
+        <div class="min-w-0 p-4 bg-gray-100 rounded-lg shadow-xs">
+            <h4 class="mb-4 font-semibold text-gray-600 ">
+                Jean Marque
+            </h4>
+            <p class="text-gray-600 dark:text-gray-400">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Fuga, cum commodi a omnis numquam quod? Totam exercitationem
+                quos hic ipsam at qui cum numquam, sed amet ratione! Ratione,
+                nihil dolorum.
+            </p>
+        </div>
+        <div class="min-w-0 p-4 text-white bg-purple-600 rounded-lg shadow-xs">
+            <h4 class="mb-4 font-semibold">
+                Michel Dautraix
+            </h4>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Fuga, cum commodi a omnis numquam quod? Totam exercitationem
+                quos hic ipsam at qui cum numquam, sed amet ratione! Ratione,
+                nihil dolorum.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>

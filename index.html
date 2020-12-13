@@ -1,0 +1,203 @@
+<!--
+  ~ LazareC
+  ~ EDUCATION PROJECT
+  ~ FILE: index.html
+  -->
+
+<!--
+  ~ LazareC
+  ~ EDUCATION PROJECT
+  ~ FILE: index.html
+  -->
+
+<!--une page de garde, affichant un message de bienvenue et -->
+<!--les promotions en cours, et offrant un champ de recherche ;-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+    <link href="styles/compiled.css" rel="stylesheet">
+    <link href="styles/tailwind.css" rel="stylesheet">
+    <title>Mask Geox</title>
+</head>
+<body>
+
+
+<!-- NAVBAR BANNER -->
+<nav class="bg-white font-sans flex  flex-col text-center md:flex-row py-4 md:px-6 px-2 bg-white shadow  w-full md:h-16 ">
+    <div class="mb-2 sm:mb-0 flex-1 md:text-left  ">
+        <a class="text-2xl  no-underline mr-2 text-grey-darkest hover:text-blue-dark" href="index.html">Geox Mask</a>
+        <label for="id_nav_search" class="hidden"></label>
+        <input id="id_nav_search" class="text-lg text-grey-darkest md:hidden w-1/3  justify-self-end  justify-self-end   border-2 rounded text-center  bg-gray-200 focus:bg-gray-100 outline-none focus:outline-none focus:shadow-outline "
+               placeholder="recherche" value="">
+    </div>
+
+    <div class="flex justify-center flex-1">
+        <form action="search.html" method="get">
+            <label for="search_hero" class="hidden"></label>
+            <input id="search_hero" class="w-full text-lg text-grey-darkest hidden   md:block  ml-2 border-2 rounded text-center  bg-gray-200 focus:bg-gray-100 outline-none focus:outline-none focus:shadow-outline " name="search_product"
+                   placeholder="recherche"
+                   type="text" value="">
+        </form>
+
+    </div>
+    <div class=" flex md:justify-end justify-center flex-1">
+
+        <!-- ICON DU SITE: https://heroicons.com/ -->
+        <a class="md:mr-8 mr-8 text-lg no-underline text-grey-darkest hover:text-blue-dark flex" href="checkout.html">Panier
+
+
+            <svg class="h-full w-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="1"/>
+            </svg>
+        </a>
+
+
+        <a class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2 flex" href="about.html">A propos
+
+            <svg class="h-full w-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="1"/>
+            </svg>
+        </a>
+
+    </div>
+</nav>
+
+
+<!-- HERO BANNER -->
+
+<div class="bg-white flex md:h-3/6 shadow-2xl  md:h-full  md:mx-24 mx-2 my-4 md:my-16 content-center flex-nowrap  ">
+
+    <div class="w-full h-full self-center  content-center  align-middle  md:ml-16 text-center md:text-left ">
+        <div class=" md:text-6xl text-4xl mt-8  font-semibold text-gray-900 whitespace-nowrap">Les masques qui <br>
+            respirent
+        </div>
+        <div class="md:mt-12 mt-6 text-xl font-light text-true-gray-500 ">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Sed blandit nunc nec tempus vulputate. Sed quis urna at quam luctus maximus non at nulla.
+        </div>
+
+        <div class="mt-8 mb-8">
+            <form action="search.html" method="get">
+                <label for="search_mobile" class="hidden"></label>
+                <input id="search_mobile" class="placeholder-nowrap md:mt-12 md:w-2/4  text-2xl text-grey-darkest h-11  ml-2 border-2 rounded text-center  bg-gray-200 focus:bg-gray-100 outline-none focus:outline-none focus:shadow-outline " name="search_product"
+                       placeholder="Le masque de votre rêve"
+                       type="text" value="">
+                <button class=" mt-4 text-2xl text-white px-8 h-11 font-semibold rounded uppercase bg-green-400 hover:bg-green-300"
+                        type="submit">
+                    Voir
+                </button>
+
+            </form>
+
+        </div>
+    </div>
+
+
+    <div class="flex-grow-0 self-center max-w-xl w-full hidden lg:block ">
+        <img alt="UN TRES BEAU MASQUE" class="  object-contain  " src="img/MASQUE-DETOURE_0.png">
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<!--PROMO BANNER-->
+<div class="grid  grid-cols-2 md:grid-cols-3  justify-between      flex flex-col  items-center md:mx-36 mx-3  my-8">
+
+    <!-- PROMO -->
+    <div class="flex flex-col  justify-center items-center md:max-w-xs mx-4    md:my-14 my-4  justify-self-center   ">
+        <img alt="UN TRES BEAU MASQUE" class="bg-gray-300 rounded-lg shadow-md bg-cover bg-center object-cover"
+             src="img/MASQUE_0-wall.png">
+
+        <div class=" bg-white w-full  -mt-10 shadow-lg rounded-lg overflow-hidden">
+            <div class="py-2  text-center font-bold uppercase tracking-wide text-gray-800 ">Masque respirant</div>
+            <div class=" w-full items-center justify-between py-2 px-3 bg-gray-400">
+                <p class="w-full text-center">
+                    <span class="text-red-500 font-bold"> 17.50€ </span> <span
+                        class="text-gray-800 line-through text-xs ">  32€   </span>
+                </p>
+                <form action="product.html">
+                    <button class=" w-full bg-gray-800 text-xs text-white px-2 py-1 font-semibold rounded uppercase hover:bg-gray-700">
+                        Voir
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col  justify-center items-center md:max-w-xs mx-4    md:my-14 my-4  justify-self-center   ">
+        <img alt="UN TRES BEAU MASQUE" class="bg-gray-300 rounded-lg shadow-md bg-cover bg-center object-cover"
+             src="img/MASQUE_0-wall.png">
+
+        <div class=" bg-white w-full  -mt-10 shadow-lg rounded-lg overflow-hidden">
+            <div class="py-2  text-center font-bold uppercase tracking-wide text-gray-800 ">Masque respirant</div>
+            <div class=" w-full items-center justify-between py-2 px-3 bg-gray-400">
+                <p class="w-full text-center">
+                    <span class="text-red-500 font-bold"> 17.50€ </span> <span
+                        class="text-gray-800 line-through text-xs ">  32€   </span>
+                </p>
+                <form action="product.html">
+                    <button class=" w-full bg-gray-800 text-xs text-white px-2 py-1 font-semibold rounded uppercase hover:bg-gray-700">
+                        Voir
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col  justify-center items-center md:max-w-xs mx-4    md:my-14 my-4  justify-self-center   ">
+        <img alt="UN TRES BEAU MASQUE" class="bg-gray-300 rounded-lg shadow-md bg-cover bg-center object-cover"
+             src="img/MASQUE_0-wall.png">
+
+        <div class=" bg-white w-full  -mt-10 shadow-lg rounded-lg overflow-hidden">
+            <div class="py-2  text-center font-bold uppercase tracking-wide text-gray-800 ">Masque respirant</div>
+            <div class=" w-full items-center justify-between py-2 px-3 bg-gray-400">
+                <p class="w-full text-center">
+                    <span class="text-red-500 font-bold"> 17.50€ </span> <span
+                        class="text-gray-800 line-through text-xs ">  32€   </span>
+                </p>
+                <form action="product.html">
+                    <button class=" w-full bg-gray-800 text-xs text-white px-2 py-1 font-semibold rounded uppercase hover:bg-gray-700">
+                        Voir
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+<!-- REVIEW BANNER -->
+
+<div class="max-w-xs  rounded  shadow-xl my-8 bg-white mx-auto">
+    <div class="review_woman md:h-72 h-32 relative px-6 md:px-0 mx-auto " >
+        <img class="absolute max-w-full md:max-h-72 max-h-32   " src="img/review/woman/woman_bad.png" alt="FEMME">
+        <img class="absolute max-w-full md:max-h-72 women_mask  max-h-32" src="img/review/woman/MASQUE_0-woman.png" alt="MASQUE POUR FEMME">
+    </div>
+    <div class="px-6  my-4">
+        <div class="font-bold text-xl">Natasha Nice - Actrice</div>
+        <p class="text-grey-darker text-base italic pb-8" >
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

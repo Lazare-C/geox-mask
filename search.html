@@ -1,0 +1,363 @@
+<!--
+  ~ LazareC
+  ~ EDUCATION PROJECT
+  ~ FILE: search.html
+  -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+    <link href="styles/compiled.css" rel="stylesheet">
+    <link href="styles/tailwind.css" rel="stylesheet">
+    <title>Recherche</title>
+</head>
+<body>
+<!-- NAVBAR BANNER -->
+<nav class="bg-white font-sans flex  flex-col text-center md:flex-row py-4 md:px-6 px-2 bg-white shadow  w-full md:h-16 ">
+    <div class="mb-2 sm:mb-0 flex-1 md:text-left  ">
+        <a class="text-2xl  no-underline mr-2 text-grey-darkest hover:text-blue-dark" href="index.html">Geox Mask</a>
+        <label for="id_nav_search" class="hidden"></label>
+        <input id="id_nav_search" class="text-lg text-grey-darkest md:hidden w-1/3  justify-self-end  justify-self-end   border-2 rounded text-center  bg-gray-200 focus:bg-gray-100 outline-none focus:outline-none focus:shadow-outline "
+               placeholder="recherche" value="">
+    </div>
+
+    <div class="flex justify-center flex-1">
+        <form action="search.html" method="get">
+            <label for="search_hero" class="hidden"></label>
+            <input id="search_hero" class="w-full text-lg text-grey-darkest hidden   md:block  ml-2 border-2 rounded text-center  bg-gray-200 focus:bg-gray-100 outline-none focus:outline-none focus:shadow-outline " name="search_product"
+                   placeholder="recherche"
+                   type="text" value="">
+        </form>
+
+    </div>
+    <div class=" flex md:justify-end justify-center flex-1">
+
+        <!-- ICON DU SITE: https://heroicons.com/ -->
+        <a class="md:mr-8 mr-8 text-lg no-underline text-grey-darkest hover:text-blue-dark flex" href="checkout.html">Panier
+
+
+            <svg class="h-full w-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="1"/>
+            </svg>
+        </a>
+
+
+        <a class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2 flex" href="about.html">A propos
+
+            <svg class="h-full w-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="1"/>
+            </svg>
+        </a>
+
+    </div>
+</nav>
+
+
+<div class="flex flex-col ">
+
+    <!-- SEARCH FOR PC/MOBILE -->
+    <div class="md:flex   ">
+        <div class="md:w-80 border-2 shadow-lg md:fixed flex flex-col px-4  md:pt-8 md:mt-8 pt-4  pb-8 bg-white ">
+
+            <form action="#" method="get">
+
+                <div class="flex w-full md:block justify-between">
+                    <label for="search">Recherche: </label>
+                    <input class="mb:mb-8 mb-4 ml-4 md:ml-0 w-2/3  md:w-full text-xl text-grey-darkest   border-2 rounded text-center  bg-gray-200 focus:bg-gray-100 outline-none focus:outline-none focus:shadow-outline " id="search" name="search_product"
+                           placeholder="recherche"
+                           type="text" value="Masque pour l'hiver">
+                </div>
+
+                <div class="  w-full flex md:block  justify-between ">
+                    <label class="" for="genre">Pour: </label>
+                    <select class="mb:mb-8 mb-4 ml-4 md:ml-0 w-2/3  md:w-full text-xl text-grey-darkest   border-2 rounded text-center  bg-gray-200 focus:bg-gray-100 outline-none focus:outline-none focus:shadow-outline"
+                            id="genre">
+                        <option>Homme</option>
+                        <option>Femme</option>
+                        <option>Inconnu au bataillon</option>
+                    </select>
+                </div>
+
+
+                <div class="  w-full flex md:block  justify-between ">
+                    <label class="" for="color">Couleur: </label>
+                    <select class="md:mb-8 mb-4 ml-4 md:ml-0 w-2/3 md:w-full text-xl text-grey-darkest    md:block   border-2 rounded text-center  bg-gray-200 focus:bg-gray-100 outline-none focus:outline-none focus:shadow-outline"
+                            id="color">
+                        <option>Bleu</option>
+                        <option>Vert</option>
+                        <option>Mauve</option>
+                        <option>Orange</option>
+                        <option>Gris claire</option>
+                        <option>Gris un peu foncé</option>
+                        <option>Gris foncé</option>
+                        <option>Gris extremment foncé</option>
+                    </select>
+                </div>
+
+
+                <div class="w-full flex md:flex-row justify-between">
+                    <label class="" for="price">Prix: </label>
+
+                    <div class="inline-flex">
+                        <input class="mb:mb-8 mb-4 mx-4 md:w-full w-20 text-xl text-grey-darkest    md:block   border-2 rounded text-center  bg-gray-200 focus:bg-gray-100 outline-none focus:outline-none focus:shadow-outline " id="price" name="search_product"
+                               placeholder="Min"
+                               type="text" value="3.50">
+                        <p class="text-2xl">à</p>
+                        <input class="mb:mb-8 mb-4 md:mx-4 ml-4 md:w-full w-20 text-xl text-grey-darkest    md:block   border-2 rounded text-center  bg-gray-200 focus:bg-gray-100 outline-none focus:outline-none focus:shadow-outline " name="search_product"
+                               placeholder="Max"
+                               type="text" value="78">
+                    </div>
+                </div>
+
+
+                <button class=" w-full mt-4 text-2xl text-white px-8 h-11 font-semibold rounded uppercase bg-blue-500 hover:bg-blue-400"
+                        type="submit">
+                    Validé
+                </button>
+
+
+            </form>
+
+
+        </div>
+    </div>
+
+
+    <div class="grid md:grid-cols-3 lg:grid-cols-4  grid-cols-2 md:ml-96 md:mr-8 ">
+
+
+        <div class="flex flex-col  justify-center items-center md:max-w-xs mx-4    md:my-8 my-4  justify-self-center   ">
+            <img alt="UN TRES BEAU MASQUE" class="bg-gray-300 rounded-lg shadow-md bg-cover bg-center object-cover"
+                 src="img/MASQUE_0-wall.png">
+
+            <div class=" bg-white w-full  -mt-10 shadow-lg rounded-lg overflow-hidden">
+                <div class="py-2  text-center font-bold uppercase tracking-wide text-gray-800 ">Masque respirant</div>
+                <div class=" w-full items-center justify-between py-2 px-3 bg-gray-400">
+                    <p class="w-full text-center">
+                        <span class="text-red-500 font-bold"> 17.50€ </span> <span
+                            class="text-gray-800 line-through text-xs ">  32€   </span>
+                    </p>
+                    <form action="product.html">
+                        <button class=" w-full bg-gray-800 text-xs text-white px-2 py-1 font-semibold rounded uppercase hover:bg-gray-700">
+                            Voir
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col  justify-center items-center md:max-w-xs mx-4    md:my-8 my-4  justify-self-center   ">
+            <img alt="UN TRES BEAU MASQUE" class="bg-gray-300 rounded-lg shadow-md bg-cover bg-center object-cover"
+                 src="img/MASQUE_0-wall.png">
+
+            <div class=" bg-white w-full  -mt-10 shadow-lg rounded-lg overflow-hidden">
+                <div class="py-2  text-center font-bold uppercase tracking-wide text-gray-800 ">Masque respirant</div>
+                <div class=" w-full items-center justify-between py-2 px-3 bg-gray-400">
+                    <p class="w-full text-center">
+                        <span class="text-red-500 font-bold"> 17.50€ </span> <span
+                            class="text-gray-800 line-through text-xs ">  32€   </span>
+                    </p>
+                    <form action="product.html">
+                        <button class=" w-full bg-gray-800 text-xs text-white px-2 py-1 font-semibold rounded uppercase hover:bg-gray-700">
+                            Voir
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col  justify-center items-center md:max-w-xs mx-4    md:my-8 my-4  justify-self-center   ">
+            <img alt="UN TRES BEAU MASQUE" class="bg-gray-300 rounded-lg shadow-md bg-cover bg-center object-cover"
+                 src="img/MASQUE_0-wall.png">
+
+            <div class=" bg-white w-full  -mt-10 shadow-lg rounded-lg overflow-hidden">
+                <div class="py-2  text-center font-bold uppercase tracking-wide text-gray-800 ">Masque respirant</div>
+                <div class=" w-full items-center justify-between py-2 px-3 bg-gray-400">
+                    <p class="w-full text-center">
+                        <span class="text-red-500 font-bold"> 17.50€ </span> <span
+                            class="text-gray-800 line-through text-xs ">  32€   </span>
+                    </p>
+                    <form action="product.html">
+                        <button class=" w-full bg-gray-800 text-xs text-white px-2 py-1 font-semibold rounded uppercase hover:bg-gray-700">
+                            Voir
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col  justify-center items-center md:max-w-xs mx-4    md:my-8 my-4  justify-self-center   ">
+            <img alt="UN TRES BEAU MASQUE" class="bg-gray-300 rounded-lg shadow-md bg-cover bg-center object-cover"
+                 src="img/MASQUE_0-wall.png">
+
+            <div class=" bg-white w-full  -mt-10 shadow-lg rounded-lg overflow-hidden">
+                <div class="py-2  text-center font-bold uppercase tracking-wide text-gray-800 ">Masque respirant</div>
+                <div class=" w-full items-center justify-between py-2 px-3 bg-gray-400">
+                    <p class="w-full text-center">
+                        <span class="text-red-500 font-bold"> 17.50€ </span> <span
+                            class="text-gray-800 line-through text-xs ">  32€   </span>
+                    </p>
+                    <form action="product.html">
+                        <button class=" w-full bg-gray-800 text-xs text-white px-2 py-1 font-semibold rounded uppercase hover:bg-gray-700">
+                            Voir
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col  justify-center items-center md:max-w-xs mx-4    md:my-8 my-4  justify-self-center   ">
+            <img alt="UN TRES BEAU MASQUE" class="bg-gray-300 rounded-lg shadow-md bg-cover bg-center object-cover"
+                 src="img/MASQUE_0-wall.png">
+
+            <div class=" bg-white w-full  -mt-10 shadow-lg rounded-lg overflow-hidden">
+                <div class="py-2  text-center font-bold uppercase tracking-wide text-gray-800 ">Masque respirant</div>
+                <div class=" w-full items-center justify-between py-2 px-3 bg-gray-400">
+                    <p class="w-full text-center">
+                        <span class="text-red-500 font-bold"> 17.50€ </span> <span
+                            class="text-gray-800 line-through text-xs ">  32€   </span>
+                    </p>
+                    <form action="product.html">
+                        <button class=" w-full bg-gray-800 text-xs text-white px-2 py-1 font-semibold rounded uppercase hover:bg-gray-700">
+                            Voir
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col  justify-center items-center md:max-w-xs mx-4    md:my-8 my-4  justify-self-center   ">
+            <img alt="UN TRES BEAU MASQUE" class="bg-gray-300 rounded-lg shadow-md bg-cover bg-center object-cover"
+                 src="img/MASQUE_0-wall.png">
+
+            <div class=" bg-white w-full  -mt-10 shadow-lg rounded-lg overflow-hidden">
+                <div class="py-2  text-center font-bold uppercase tracking-wide text-gray-800 ">Masque respirant</div>
+                <div class=" w-full items-center justify-between py-2 px-3 bg-gray-400">
+                    <p class="w-full text-center">
+                        <span class="text-red-500 font-bold"> 17.50€ </span> <span
+                            class="text-gray-800 line-through text-xs ">  32€   </span>
+                    </p>
+                    <form action="product.html">
+                        <button class=" w-full bg-gray-800 text-xs text-white px-2 py-1 font-semibold rounded uppercase hover:bg-gray-700">
+                            Voir
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col  justify-center items-center md:max-w-xs mx-4    md:my-8 my-4  justify-self-center   ">
+            <img alt="UN TRES BEAU MASQUE" class="bg-gray-300 rounded-lg shadow-md bg-cover bg-center object-cover"
+                 src="img/MASQUE_0-wall.png">
+
+            <div class=" bg-white w-full  -mt-10 shadow-lg rounded-lg overflow-hidden">
+                <div class="py-2  text-center font-bold uppercase tracking-wide text-gray-800 ">Masque respirant</div>
+                <div class=" w-full items-center justify-between py-2 px-3 bg-gray-400">
+                    <p class="w-full text-center">
+                        <span class="text-red-500 font-bold"> 17.50€ </span> <span
+                            class="text-gray-800 line-through text-xs ">  32€   </span>
+                    </p>
+                    <form action="product.html">
+                        <button class=" w-full bg-gray-800 text-xs text-white px-2 py-1 font-semibold rounded uppercase hover:bg-gray-700">
+                            Voir
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col  justify-center items-center md:max-w-xs mx-4    md:my-8 my-4  justify-self-center   ">
+            <img alt="UN TRES BEAU MASQUE" class="bg-gray-300 rounded-lg shadow-md bg-cover bg-center object-cover"
+                 src="img/MASQUE_0-wall.png">
+
+            <div class=" bg-white w-full  -mt-10 shadow-lg rounded-lg overflow-hidden">
+                <div class="py-2  text-center font-bold uppercase tracking-wide text-gray-800 ">Masque respirant</div>
+                <div class=" w-full items-center justify-between py-2 px-3 bg-gray-400">
+                    <p class="w-full text-center">
+                        <span class="text-red-500 font-bold"> 17.50€ </span> <span
+                            class="text-gray-800 line-through text-xs ">  32€   </span>
+                    </p>
+                    <form action="product.html">
+                        <button class=" w-full bg-gray-800 text-xs text-white px-2 py-1 font-semibold rounded uppercase hover:bg-gray-700">
+                            Voir
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col  justify-center items-center md:max-w-xs mx-4    md:my-8 my-4  justify-self-center   ">
+            <img alt="UN TRES BEAU MASQUE" class="bg-gray-300 rounded-lg shadow-md bg-cover bg-center object-cover"
+                 src="img/MASQUE_0-wall.png">
+
+            <div class=" bg-white w-full  -mt-10 shadow-lg rounded-lg overflow-hidden">
+                <div class="py-2  text-center font-bold uppercase tracking-wide text-gray-800 ">Masque respirant</div>
+                <div class=" w-full items-center justify-between py-2 px-3 bg-gray-400">
+                    <p class="w-full text-center">
+                        <span class="text-red-500 font-bold"> 17.50€ </span> <span
+                            class="text-gray-800 line-through text-xs ">  32€   </span>
+                    </p>
+                    <form action="product.html">
+                        <button class=" w-full bg-gray-800 text-xs text-white px-2 py-1 font-semibold rounded uppercase hover:bg-gray-700">
+                            Voir
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col  justify-center items-center md:max-w-xs mx-4    md:my-8 my-4  justify-self-center   ">
+            <img alt="UN TRES BEAU MASQUE" class="bg-gray-300 rounded-lg shadow-md bg-cover bg-center object-cover"
+                 src="img/MASQUE_0-wall.png">
+
+            <div class=" bg-white w-full  -mt-10 shadow-lg rounded-lg overflow-hidden">
+                <div class="py-2  text-center font-bold uppercase tracking-wide text-gray-800 ">Masque respirant</div>
+                <div class=" w-full items-center justify-between py-2 px-3 bg-gray-400">
+                    <p class="w-full text-center">
+                        <span class="text-red-500 font-bold"> 17.50€ </span> <span
+                            class="text-gray-800 line-through text-xs ">  32€   </span>
+                    </p>
+                    <form action="product.html">
+                        <button class=" w-full bg-gray-800 text-xs text-white px-2 py-1 font-semibold rounded uppercase hover:bg-gray-700">
+                            Voir
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col  justify-center items-center md:max-w-xs mx-4    md:my-8 my-4  justify-self-center   ">
+            <img alt="UN TRES BEAU MASQUE" class="bg-gray-300 rounded-lg shadow-md bg-cover bg-center object-cover"
+                 src="img/MASQUE_0-wall.png">
+
+            <div class=" bg-white w-full  -mt-10 shadow-lg rounded-lg overflow-hidden">
+                <div class="py-2  text-center font-bold uppercase tracking-wide text-gray-800 ">Masque respirant</div>
+                <div class=" w-full items-center justify-between py-2 px-3 bg-gray-400">
+                    <p class="w-full text-center">
+                        <span class="text-red-500 font-bold"> 17.50€ </span> <span
+                            class="text-gray-800 line-through text-xs ">  32€   </span>
+                    </p>
+                    <form action="product.html">
+                        <button class=" w-full bg-gray-800 text-xs text-white px-2 py-1 font-semibold rounded uppercase hover:bg-gray-700">
+                            Voir
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>

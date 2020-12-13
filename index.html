@@ -4,11 +4,6 @@
   ~ FILE: index.html
   -->
 
-<!--
-  ~ LazareC
-  ~ EDUCATION PROJECT
-  ~ FILE: index.html
-  -->
 
 <!--une page de garde, affichant un message de bienvenue et -->
 <!--les promotions en cours, et offrant un champ de recherche ;-->
@@ -185,19 +180,38 @@
 
 
 <!-- REVIEW BANNER -->
-
-<div class="max-w-xs  rounded  shadow-xl my-8 bg-white mx-auto">
-    <div class="review_woman md:h-72 h-32 relative px-6 md:px-0 mx-auto " >
-        <img class="absolute max-w-full md:max-h-72 max-h-32   " src="img/review/woman/woman_bad.png" alt="FEMME">
-        <img class="absolute max-w-full md:max-h-72 women_mask  max-h-32" src="img/review/woman/MASQUE_0-woman.png" alt="MASQUE POUR FEMME">
+<div class="fex grid grid-cols-2">
+    <div class="w-1/2 mx-auto  rounded  shadow-xl my-8 bg-white ">
+        <!--    FEMME-->
+        <div class="review_img md:h-72 h-32 relative px-6 md:px-0">
+            <img alt="FEMME" class="absolute  md:max-h-72 max-h-32 bg-blue-100   " src="img/review/woman/woman_bad.png">
+            <img alt="MASQUE POUR FEMME" class="absolute  md:max-h-72 review_mask  max-h-32"
+                 src="img/review/woman/MASQUE_0-woman.png">
+        </div>
+        <div class="px-6  my-4">
+            <div class="font-bold text-xl">Natasha Nice - Actrice</div>
+            <p class="text-grey-darker text-base italic pb-8">
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
+                perferendis eaque, exercitationem praesentium nihil."
+            </p>
+        </div>
     </div>
-    <div class="px-6  my-4">
-        <div class="font-bold text-xl">Natasha Nice - Actrice</div>
-        <p class="text-grey-darker text-base italic pb-8" >
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
-        </p>
+
+    <div class="w-1/2 mx-auto rounded  shadow-xl my-8 bg-white ">
+        <!--    DECAPRIO-->
+        <div class="review_img md:h-72 h-32 relative px-6 md:px-0 mx-auto ">
+            <img alt="FEMME" class="absolute  md:max-h-72 max-h-32   " src="img/review/dicaprio/dicaprio_bad.png">
+            <img alt="MASQUE POUR FEMME" class="absolute  md:max-h-72 review_mask  max-h-32"
+                 src="img/review/dicaprio/MASQUE_dicaprio.png">
+        </div>
+        <div class="px-6  my-4">
+            <div class="font-bold text-xl">Natasha Nice - Actrice</div>
+            <p class="text-grey-darker text-base italic pb-8">
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
+                perferendis eaque, exercitationem praesentium nihil."
+            </p>
+        </div>
     </div>
 </div>
-
 </body>
 </html>

@@ -31257,6 +31257,44 @@ body {
   white-space: nowrap;
 }
 
+/*
+.h-100vh{
+    height: 100vh;
+}
+*/
+
+/*SHAPE DIVIER MAKE ON https://www.shapedivider.app/*/
+
+.about_divider {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.about_divider svg {
+  position: relative;
+  display: block;
+  width: calc(166% + 1px);
+  height: 170px;
+}
+
+/*ABOUT MASK SPIN*/
+
+.about_mask_spin:hover {
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* -----
 END CUSTOM CSS
 ----- */

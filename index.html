@@ -26,8 +26,8 @@
     <div class="mb-2 sm:mb-0 flex-1 md:text-left  ">
         <a class="text-2xl  no-underline mr-2 text-grey-darkest hover:text-blue-dark" href="index.html">Geox Mask</a>
         <label for="id_nav_search" class="hidden"></label>
-        <input id="id_nav_search" class="text-lg text-grey-darkest md:hidden w-1/3  justify-self-end  justify-self-end   border-2 rounded text-center  bg-gray-200 focus:bg-gray-100 outline-none focus:outline-none focus:shadow-outline "
-               placeholder="recherche" value="">
+        <input class="text-lg text-grey-darkest md:hidden w-1/3  justify-self-end  justify-self-end   border-2 rounded text-center  bg-gray-200 focus:bg-gray-100 outline-none focus:outline-none focus:shadow-outline "
+               id="id_nav_search" placeholder="recherche" value="">
     </div>
 
     <div class="flex justify-center flex-1">
@@ -74,14 +74,18 @@
         <div class=" md:text-6xl text-4xl mt-8  font-semibold text-gray-900 whitespace-nowrap">Les masques qui <br>
             respirent
         </div>
-        <div class="md:mt-12 mt-6 text-xl font-light text-true-gray-500 ">Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Sed blandit nunc nec tempus vulputate. Sed quis urna at quam luctus maximus non at nulla.
+        <div class="md:mt-12 mt-6 text-xl font-light text-true-gray-500 ">Vous en avez marre des masques qui vous
+            étouffent? <br class="hidden md:block"> Nous avons trouvé la solution ! <br class="hidden md:block"> Grace à
+            une technologie de trou respirants sur nos masques, <br class="hidden md:block"> vous pouvez respirer comme
+            avant
         </div>
 
         <div class="mt-8 mb-8">
             <form action="search.html" method="get">
                 <label for="search_mobile" class="hidden"></label>
-                <input id="search_mobile" class="placeholder-nowrap md:mt-12 md:w-2/4  text-2xl text-grey-darkest h-11  ml-2 border-2 rounded text-center  bg-gray-200 focus:bg-gray-100 outline-none focus:outline-none focus:shadow-outline " name="search_product"
+                <input id="search_mobile"
+                       class="placeholder-nowrap md:mt-12 md:w-2/4  text-2xl text-grey-darkest h-11  ml-2 border-2 rounded text-center  bg-gray-200 focus:bg-gray-100 outline-none focus:outline-none focus:shadow-outline "
+                       name="search_product"
                        placeholder="Le masque de votre rêve"
                        type="text" value="">
                 <button class=" mt-4 text-2xl text-white px-8 h-11 font-semibold rounded uppercase bg-green-400 hover:bg-green-300"
@@ -100,10 +104,6 @@
     </div>
 
 </div>
-
-
-
-
 
 
 
@@ -230,7 +230,7 @@
                  src="img/review/dicaprio/MASQUE_dicaprio.png">
         </div>
 
-        <div class="font-bold text-xl self-center">Natasha Noice - Actrice</div>
+        <div class="font-bold text-xl self-center">Leonardo DiFerero - Acteur</div>
         <div>
             <p class="text-grey-darker text-base italic pb-8 text-justify ">
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et

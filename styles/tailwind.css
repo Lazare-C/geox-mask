@@ -68,11 +68,12 @@ body {
 */
 
 
-/*SHAPE DIVIER MAKE ON https://www.shapedivider.app/*/
+/* SHAPE DIVIER MAKE ON https://www.shapedivider.app/ */
 .about_divider {
     width: 100%;
     overflow: hidden;
     line-height: 0;
+
 }
 
 .about_divider svg {

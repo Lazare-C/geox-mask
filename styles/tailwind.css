@@ -5,7 +5,8 @@
  */
 
 
-
+/* Pour la génération du framework tailwind minifier
+ */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,13 +15,18 @@
 CUSTOM CSS
 ----- */
 
+
+/*
+Animation pour le drop du masque sur la page d'accueil
+https://codepen.io/lepenr/pen/wxLdYX
+*/
 .review_img:hover .review_mask {
     /*visibility: hidden;*/
     animation: drop 1.2s forwards;
 }
 
 @keyframes drop {
-/*https://codepen.io/lepenr/pen/wxLdYX*/
+
     0% {
         transform-origin: center;
         opacity: 1;

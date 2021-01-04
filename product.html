@@ -20,15 +20,18 @@
 <nav class="bg-white font-sans flex  flex-col text-center md:flex-row py-4 md:px-6 px-2 bg-white shadow  w-full md:h-16 ">
     <div class="mb-2 sm:mb-0 flex-1 md:text-left  ">
         <a class="text-2xl  no-underline mr-2 text-grey-darkest hover:text-blue-dark" href="index.html">Geox Mask</a>
-        <label for="id_nav_search" class="hidden"></label>
-        <input id="id_nav_search" class="text-lg text-grey-darkest md:hidden w-1/3  justify-self-end  justify-self-end   border-2 rounded text-center  bg-gray-200 focus:bg-gray-100 outline-none focus:outline-none focus:shadow-outline "
+        <label class="hidden" for="id_nav_search"></label>
+        <input class="text-lg text-grey-darkest md:hidden w-1/3  justify-self-end  justify-self-end   border-2 rounded text-center  bg-gray-200 focus:bg-gray-100 outline-none focus:outline-none focus:shadow-outline "
+               id="id_nav_search"
                placeholder="recherche" value="">
     </div>
 
     <div class="flex justify-center flex-1">
         <form action="search.html" method="get">
-            <label for="search_hero" class="hidden"></label>
-            <input id="search_hero" class="w-full text-lg text-grey-darkest hidden   md:block  ml-2 border-2 rounded text-center  bg-gray-200 focus:bg-gray-100 outline-none focus:outline-none focus:shadow-outline " name="search_product"
+            <label class="hidden" for="search_hero"></label>
+            <input class="w-full text-lg text-grey-darkest hidden   md:block  ml-2 border-2 rounded text-center  bg-gray-200 focus:bg-gray-100 outline-none focus:outline-none focus:shadow-outline "
+                   id="search_hero"
+                   name="search_product"
                    placeholder="recherche"
                    type="text" value="">
         </form>
@@ -42,7 +45,8 @@
 
             <svg class="h-full w-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                  xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round"
+                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                      stroke-linecap="round" stroke-linejoin="round"
                       stroke-width="1"/>
             </svg>
         </a>
@@ -52,7 +56,8 @@
 
             <svg class="h-full w-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                  xmlns="http://www.w3.org/2000/svg">
-                <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"
+                <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round"
+                      stroke-linejoin="round"
                       stroke-width="1"/>
             </svg>
         </a>
@@ -100,20 +105,21 @@
                      src="img/MASQUE_0-rouge.png">
                 <img alt="UN TRES BEAU MASQUE" class=" w-24 border-4 object-contain object-center "
                      src="img/MASQUE_0-vert.png">
-
-
             </div>
         </div>
 
 
         <div class="md:mt-12 mt-6 mr-8 mx-8 md:mx-0 text-m font-light text-true-gray-500 text-left ">Notre masque
-            dernière génération vous garanti une respiration optimal grace à un
-            système de troue permettant l'air de circuler librement, afin d'éviter de faire suffoquer le porteur
+            dernière génération vous garantie une respiration optimale grace à un
+            système de trou permettant a l'air de circuler librement, afin d'éviter de faire suffoquer le porteur
             <br>
             <br>
-            Tous nos masques sont garantie 20jours!
-            <br>
-            Fabrication: pars des enfants très heureux!
+            <ul class="list-inside list-disc">
+                <li>Tous nos masques sont garantie 20jours!</li>
+
+                <li>Fabrication: par des enfants très heureux!</li>
+            </ul>
+
         </div>
 
         <div class="mt-12 mb-8 w-full text-center">
@@ -145,11 +151,13 @@
             <label class="w-auto mt-8 " for="user">Entrez votre nom: </label>
             <input class="bg-gray-200 pl-4  mx-8 my-4 h-14 rounded text-sm focus:outline-none justify-center" id="user"
                    name="user"
-                   placeholder="entrer votre nom">
+                   placeholder="Jean Charles">
             <label class="" for="comment">Entrez votre commentaire: </label>
-            <textarea class="mx-8 pl-4 pt-4 resize-none mt-4 bg-gray-200 h-24 rounded text-sm focus:outline-none justify-center" id="comment"
-                      name="comment"
-                      placeholder="Entrer un commantaire"></textarea>
+            <textarea
+                    class="mx-8 pl-4 pt-4 resize-none mt-4 bg-gray-200 h-24 rounded text-sm focus:outline-none justify-center"
+                    id="comment"
+                    name="comment"
+                    placeholder="Très bon achat"></textarea>
 
 
             <button class="w-1/3 mx-auto my-8 text-2xl text-white px-2 h-11 font-semibold rounded uppercase bg-green-400 hover:bg-green-300"
@@ -160,15 +168,15 @@
 
         </div>
     </form>
-    <!--INSPIRE D'UN MODEL SUR: tailwindcomponents.com-->
+    <!--INSPIRE D'UN MODEL SUR: taliwindcomponents.com-->
     <div class="grid gap-6 mb-8 md:grid-cols-2">
         <div class="min-w-0 p-4 bg-gray-100 rounded-lg shadow-xs">
             <h4 class="mb-4 font-semibold text-gray-600 ">
                 Jean Marque du Trou
             </h4>
             <p class="text-gray-600 dark:text-gray-400">
-                Vraiment très propre comme masque ! dommage que j'ai attrapé le covid en le portant mais tant pis au
-                moins,je suis beau avec
+                Vraiment très propre comme masque! Dommage que j'ai attrapé le covid en le portant mais tant pis au
+                moins je suis beau avec..
             </p>
         </div>
         <div class="min-w-0 p-4 text-white bg-purple-600 rounded-lg shadow-xs">
@@ -176,8 +184,8 @@
                 Michel Dautraix
             </h4>
             <p>
-                Vraiment très propre comme masque ! dommage que j'ai attrapé le covid en le portant mais tant pis au
-                moins,je suis beau avec
+                Vraiment très propre comme masque! Dommage que j'ai attrapé le covid en le portant mais tant pis au
+                moins je suis beau avec..
             </p>
         </div>
 
@@ -186,8 +194,8 @@
                 Michel Dautraix
             </h4>
             <p>
-                Vraiment très propre comme masque ! dommage que j'ai attrapé le covid en le portant mais tant pis au
-                moins,je suis beau avec
+                Vraiment très propre comme masque! Dommage que j'ai attrapé le covid en le portant mais tant pis au
+                moins je suis beau avec..
             </p>
         </div>
         <div class="min-w-0 p-4 bg-gray-100 rounded-lg shadow-xs">
@@ -195,8 +203,8 @@
                 Jean Marque
             </h4>
             <p class="text-gray-600 dark:text-gray-400">
-                Vraiment très propre comme masque ! dommage que j'ai attrapé le covid en le portant mais tant pis au
-                moins,je suis beau avec
+                Vraiment très propre comme masque! Dommage que j'ai attrapé le covid en le portant mais tant pis au
+                moins je suis beau avec..
             </p>
         </div>
 
@@ -205,8 +213,8 @@
                 Jean Marque
             </h4>
             <p class="text-gray-600 dark:text-gray-400">
-                Vraiment très propre comme masque ! dommage que j'ai attrapé le covid en le portant mais tant pis au
-                moins,je suis beau avec
+                Vraiment très propre comme masque! Dommage que j'ai attrapé le covid en le portant mais tant pis au
+                moins je suis beau avec..
             </p>
         </div>
         <div class="min-w-0 p-4 text-white bg-purple-600 rounded-lg shadow-xs">
@@ -214,8 +222,8 @@
                 Michel Dautraix
             </h4>
             <p>
-                Vraiment très propre comme masque ! dommage que j'ai attrapé le covid en le portant mais tant pis au
-                moins,je suis beau avec
+                Vraiment très propre comme masque! Dommage que j'ai attrapé le covid en le portant mais tant pis au
+                moins je suis beau avec..
             </p>
         </div>
 

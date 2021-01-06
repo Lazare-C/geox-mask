@@ -8,3 +8,4 @@ gen
 node_modules
 *.psd
 debug.log
+/geox-mask.rar

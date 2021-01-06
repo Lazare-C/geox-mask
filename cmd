@@ -1,4 +1,4 @@
-npx tailwindcss build styles/tailwind.css -o styles/compiled.css
+npx tailwindcss build styles/main.css -o styles/tailwind.css
 
 
 set NODE_ENV=production

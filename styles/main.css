@@ -1,0 +1,106 @@
+/*
+ * LazareC
+ * EDUCATION PROJECT
+ * FILE: main.css
+ * Humorous site, a real mask really saves lives
+ */
+
+
+/* Pour la génération du framework tailwind minifier
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -----
+CUSTOM CSS
+----- */
+
+
+/*
+Animation pour le drop du masque sur la page d'accueil
+https://codepen.io/lepenr/pen/wxLdYX
+*/
+.review_img:hover .review_mask {
+    /*visibility: hidden;*/
+    animation: drop 1.2s forwards;
+}
+
+@keyframes drop {
+
+    0% {
+        transform-origin: center;
+        opacity: 1;
+    }
+    20% {
+        transform: translate3d(0, 20px, 0) rotate3d(0, 0, 1, -10deg);
+        opacity: 1;
+    }
+    40%, 45% {
+        transform: translate3d(0, -20px, 0) rotate3d(0, 0, 1, 10deg);
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: translate3d(0, 100px, 0) rotate3d(0, 0, 0, 0deg);
+    }
+}
+
+
+body {
+    /*SVG FAIT SUR ILLUSTRATOR*/
+    background-image: url(../img/mask_compresed.svg);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: 10em;
+}
+
+
+.placeholder-nowrap {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*
+.h-100vh{
+    height: 100vh;
+}
+*/
+
+
+/* SHAPE DIVIER MAKE ON https://www.shapedivider.app/ */
+.about_divider {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+}
+
+.about_divider svg {
+    position: relative;
+    display: block;
+    width: calc(166% + 1px);
+    height: 170px;
+}
+
+
+/*ABOUT MASK SPIN*/
+
+.about_mask_spin:hover {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* -----
+END CUSTOM CSS
+----- */

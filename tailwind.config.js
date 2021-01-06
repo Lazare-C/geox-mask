@@ -8,7 +8,7 @@
 module.exports = {
     purge: {
         mode: 'all',
-        enabled: false,
+        enabled: true,
         content: [
             '*.html',
             './src/**/*.vue',

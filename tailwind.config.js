@@ -2,6 +2,7 @@
  * LazareC
  * EDUCATION PROJECT
  * FILE: tailwind.config.js
+ * Humorous site, a real mask really saves lives
  */
 
 module.exports = {
